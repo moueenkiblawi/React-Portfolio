@@ -1,0 +1,56 @@
+footer.flex{
+    justify-content: space-between;
+    margin-bottom:1.9rem;
+
+}
+
+footer.flex ul{
+    display: flex;
+    gap: 1rem;
+}
+
+footer.flex ul a{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+}
+footer.flex ul a:hover{
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer.flex p{
+    color: rgb(113, 113, 122);
+}
+
+
+button.scollToTop{
+    background-color: rgba(25, 118, 210, 0.85);
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 3%;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.4rem;
+    
+}
+button.scollToTop:hover{
+    background-color: rgb(25, 118, 210);
+}
+.display{
+    display: none;
+}
+
+@media (max-width:800px){
+    footer.flex{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    button.scollToTop{
+        opacity: 0.6;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+}
